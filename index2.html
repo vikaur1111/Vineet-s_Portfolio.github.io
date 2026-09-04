@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vineet Kaur | Business Analyst Portfolio</title>
+
+  <meta
+    name="description"
+    content="Vineet Kaur - Business Analyst specializing in data analysis, process improvement, CRM, ERP, UAT, and workflow transformation."
+  />
+
+  <meta
+    name="keywords"
+    content="Vineet Kaur, Business Analyst, Data Analyst, CRM Consultant, Power BI, Dynamics 365, Process Improvement"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-dark: #050b14;
+      --card: #0f1c33;
+      --card-light: #101f39;
+      --line: rgba(255, 255, 255, 0.09);
+      --text: #e8eefc;
+      --muted: #a9b6d3;
+      --accent: #4f8cff;
+      --accent-light: #9dbdff;
+      --teal: #2dd4bf;
+      --yellow: #fbbf24;
+      --red: #fb7185;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(79, 140, 255, 0.18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at top right,
+          rgba(45, 212, 191, 0.13),
+          transparent 28%
+        ),
+        linear-gradient(180deg, var(--bg), var(--bg-dark));
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+    }
+
+    h2 {
+      font-size: clamp(1.7rem, 2.5vw, 2.45rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      line-height: 1.25;
+    }
+
+    h4 {
+      line-height: 1.3;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      background: rgba(255, 255, 255, 0.035);
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow i {
+      color: var(--teal);
+    }
+
+    /* Navigation */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      background: rgba(5, 11, 20, 0.7);
+      backdrop-filter: blur(16px);
+    }
+
+    .topbar-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      color: #ffffff;
+      font-size: 1.08rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 19px;
+    }
+
+    .nav a {
+      color: var(--muted);
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+    }
+
+    /* Buttons */
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .btn-primary {
+      color: #ffffff;
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent), #3568db);
+    }
+
+    .btn-secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 78px 0 32px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.065),
+          rgba(255, 255, 255, 0.025)
+        ),
+        linear-gradient(180deg, rgba(15, 28, 51, 0.96), rgba(10, 18, 34, 0.96));
+      box-shadow: var(--shadow);
+    }
+
+    .hero-panel::before {
+      position: absolute;
+      inset: -2px;
+      content: "";
+      pointer-events: none;
+      opacity: 0.85;
+      background:
+        linear-gradient(
+          135deg,
+          transparent 0%,
+          transparent 35%,
+          rgba(79, 140, 255, 0.13) 36%,
+          transparent 40%
+        ),
+        linear-gradient(
+          45deg,
+          transparent 0%,
+          transparent 48%,
+          rgba(45, 212, 191, 0.1) 49%,
+          transparent 53%
+        );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 18px;
+    }
+
+    .hero-text {
+      max-width: 65ch;
+      color: var(--muted);
+      font-size: 1.02rem;
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 20px;
+    }
+
+    /* Cards */
+
+    .stat-card,
+    .glass-card,
+    .service,
+    .case,
+    .side-card,
+    .dashboard-card,
+    .kpi {
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(16, 31, 57, 0.94), rgba(11, 23, 48, 0.94));
+      box-shadow: var(--shadow);
+    }
+
+    .stat-card,
+    .glass-card,
+    .side-card {
+      padding: 22px;
+      border-radius: 24px;
+    }
+
+    .stat-card {
+      display: grid;
+      gap: 18px;
+    }
+
+    .snapshot-heading {
+      margin-top: 4px;
+      color: var(--accent-light);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .stat-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #ffffff;
+      font-size: 1.45rem;
+      line-height: 1;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .section-head > div {
+      max-width: 720px;
+    }
+
+    .section-head > p {
+      max-width: 56ch;
+      color: var(--muted);
+    }
+
+    /* KPI section */
+
+    .kpi-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .kpi {
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .kpi .number {
+      color: #ffffff;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+    }
+
+    .kpi .label {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Skills */
+
+    .cards-three {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service {
+      padding: 22px;
+      border-radius: 22px;
+    }
+
+    .service-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      margin-bottom: 14px;
+      border-radius: 14px;
+      color: var(--accent-light);
+      background: rgba(79, 140, 255, 0.13);
+    }
+
+    .service p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    /* Tags */
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 7px 11px;
+      border: 1px solid rgba(45, 212, 191, 0.18);
+      border-radius: 999px;
+      color: #a8fff2;
+      background: rgba(45, 212, 191, 0.12);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* Professional Projects */
+
+    .case-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case {
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .case-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 22px 22px 0;
+    }
+
+    .case-title {
+      display: grid;
+      gap: 9px;
+    }
+
+    .case-body {
+      padding: 16px 22px 22px;
+    }
+
+    .case-body > p {
+      color: var(--muted);
+    }
+
+    .case-list {
+      display: grid;
+      gap: 10px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case-list li {
+      padding: 10px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      color: #d9e4fb;
+      font-size: 0.93rem;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .result {
+      margin-top: 16px;
+      padding: 14px 14px 14px 16px;
+      border-left: 4px solid var(--yellow);
+      border-radius: 14px;
+      color: #f8efcf;
+      background: rgba(251, 191, 36, 0.08);
+      font-size: 0.94rem;
+    }
+
+    /* Educational Project */
+
+    .education-project {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(16, 31, 57, 0.94), rgba(11, 23, 48, 0.94));
+      box-shadow: var(--shadow);
+    }
+
+    .education-project-content {
+      padding: 24px;
+    }
+
+    /* Dashboard */
+
+    .dashboard-card {
+      overflow: hidden;
+      border-radius: 24px;
+    }
+
+    .dashboard-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 24px 24px 18px;
+    }
+
+    .dashboard-header h3 {
+      margin-top: 10px;
+      font-size: 1.38rem;
+    }
+
+    .dashboard-header p {
+      max-width: 780px;
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    .dashboard-badge {
+      padding: 8px 12px;
+      border: 1px solid rgba(79, 140, 255, 0.25);
+      border-radius: 999px;
+      color: #cfe0ff;
+      background: rgba(79, 140, 255, 0.13);
+      font-size: 0.8rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .dashboard-frame {
+      margin: 0 24px 24px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      background: #0b0d13;
+    }
+
+    .dashboard-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 720px;
+      object-fit: contain;
+    }
+
+    .insight-callout {
+      margin: 20px 24px 24px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--teal);
+      border-radius: 14px;
+      color: #d7fffa;
+      background: rgba(45, 212, 191, 0.09);
+    }
+
+    .insight-callout strong {
+      color: #ffffff;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      padding: 0 24px 24px;
+    }
+
+    .insight-card {
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .insight-card i {
+      margin-bottom: 10px;
+      color: var(--teal);
+      font-size: 1.1rem;
+    }
+
+    .insight-card h4 {
+      margin-bottom: 7px;
+      font-size: 1rem;
+    }
+
+    .insight-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Experience */
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .year {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 12px;
+      border-radius: 14px;
+      color: #cfe0ff;
+      background: rgba(79, 140, 255, 0.14);
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .step p {
+      margin-top: 6px;
+      color: var(--muted);
+    }
+
+    /* Education and tools */
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .chip {
+      padding: 9px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 999px;
+      color: #d9e4fb;
+      background: rgba(255, 255, 255, 0.04);
+      font-size: 0.86rem;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .contact-item i {
+      margin-top: 3px;
+      color: var(--teal);
+    }
+
+    .contact-item p {
+      margin-top: 3px;
+      color: var(--muted);
+    }
+
+    .contact-item a {
+      color: var(--accent-light);
+      transition: color 0.2s ease;
+    }
+
+    .contact-item a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+
+    .footer {
+      margin-top: 24px;
+      padding: 34px 0 48px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1000px) {
+      .hero-grid,
+      .kpi-grid,
+      .cards-three,
+      .case-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .insight-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 32px, var(--max-width));
+      }
+
+      .section {
+        padding: 56px 0;
+      }
+
+      .hero {
+        padding-top: 52px;
+      }
+
+      .hero-panel {
+        padding: 26px;
+        border-radius: 22px;
+      }
+
+      .section-head {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .kpi-grid,
+      .cards-three,
+      .case-grid,
+      .insight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-row {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .dashboard-header {
+        padding: 20px 16px 16px;
+      }
+
+      .dashboard-frame {
+        margin: 0 16px 16px;
+      }
+
+      .dashboard-image {
+        min-height: 220px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .insight-callout {
+        margin: 16px;
+      }
+
+      .insight-grid {
+        padding: 0 16px 16px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .stat-row {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions,
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">Vineet Kaur</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Professional Projects</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#educational-project">Educational Project</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-panel">
+          <div class="hero-content">
+
+            <span class="eyebrow">
+              <i class="fa-solid fa-chart-line"></i>
+              Business Analyst | Data &amp; Process Transformation
+            </span>
+
+            <h1>
+              I help businesses turn messy processes into smart decisions and measurable growth.
+            </h1>
+
+            <p class="hero-text">
+              Business Analyst with experience across rental management,
+              retail operations, non-profit systems, CRM, ERP, reporting,
+              UAT, and process improvement.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">
+                <i class="fa-solid fa-briefcase"></i>
+                View Professional Projects
+              </a>
+
+              <a class="btn btn-secondary" href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                Contact Me
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Portfolio Snapshot -->
+        <div class="hero-side">
+
+          <div class="stat-card">
+            <h3>Portfolio Snapshot</h3>
+
+            <!-- Business Analyst subsection -->
+            <div>
+              <div class="snapshot-heading">
+                Business Analyst
+              </div>
+
+              <div class="stat-row" style="margin-top: 10px;">
+                <div class="stat">
+                  <strong>2+ yrs</strong>
+                  <span>Business analysis and operations experience</span>
+                </div>
+
+                <div class="stat">
+                  <strong>30%</strong>
+                  <span>Efficiency improvement through process analysis</span>
+                </div>
+
+                <div class="stat">
+                  <strong>50%</strong>
+                  <span>Reduction in overdue maintenance</span>
+                </div>
+
+                <div class="stat">
+                  <strong>30%</strong>
+                  <span>Faster quote-to-rental cycle time</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sales Experience subsection -->
+            <div>
+              <div class="snapshot-heading">
+                Sales Experience
+              </div>
+
+              <div class="stat-row" style="margin-top: 10px;">
+                <div class="stat">
+                  <strong>22</strong>
+                  <span>Associates led in a fast-paced retail environment</span>
+                </div>
+
+                <div class="stat">
+                  <strong>125%</strong>
+                  <span>Sales target achievement through leadership</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="glass-card">
+            <h3>My Working Approach</h3>
+
+            <p class="muted" style="margin-top: 10px;">
+              I combine structured analysis, stakeholder communication, and
+              data-backed thinking to improve processes and support better
+              business decisions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+   <!--  Impact KPIs 
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <div class="grid kpi-grid">
+          <div class="kpi">
+            <div class="number">30%</div>
+            <div class="label">Efficiency improvement from process analysis</div>
+          </div>
+
+          <div class="kpi">
+            <div class="number">125%</div>
+            <div class="label">Sales target achievement through leadership</div>
+          </div>
+
+          <div class="kpi">
+            <div class="number">50%</div>
+            <div class="label">Reduction in overdue maintenance</div>
+          </div>
+
+          <div class="kpi">
+            <div class="number">30%</div>
+            <div class="label">Faster quote-to-rental cycle time</div>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-swatchbook"></i>
+              Skills
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              A balanced mix of analysis, reporting, systems, and testing.
+            </h2>
+          </div>
+
+          <p>
+            Built for roles in business analysis, CRM functional consulting,
+            process improvement, and data reporting.
+          </p>
+        </div>
+
+        <div class="grid cards-three">
+
+          <div class="service">
+            <span class="service-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </span>
+
+            <h3>Business Analysis</h3>
+
+            <p>
+              Requirements gathering, BRD/FRD documentation, user stories,
+              acceptance criteria, stakeholder interviews, process mapping,
+              and requirements traceability.
+            </p>
+          </div>
+
+          <div class="service">
+            <span class="service-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </span>
+
+            <h3>Data &amp; Reporting</h3>
+
+            <p>
+              Power BI, Tableau, Excel, Python, pandas, NumPy, Matplotlib,
+              Seaborn, forecasting, KPI tracking, and dashboard creation.
+            </p>
+          </div>
+
+          <div class="service">
+            <span class="service-icon">
+              <i class="fa-solid fa-gears"></i>
+            </span>
+
+            <h3>CRM / ERP / QA</h3>
+
+            <p>
+              Dynamics 365 CRM, Great Plains, Dynamics F&amp;O, Azure DevOps,
+              JIRA, UAT, smoke testing, and solution validation.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-folder-open"></i>
+              Professional Projects
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              Professional projects presented through problem, approach, and outcome.
+            </h2>
+          </div>
+
+          <p>
+            Projects demonstrating business analysis, process improvement,
+            ERP, CRM, requirements documentation, and stakeholder collaboration.
+          </p>
+        </div>
+
+        <div class="grid case-grid">
+
+          <!-- Professional Project 1 -->
+          <article class="case">
+            <div class="case-top">
+              <div class="case-title">
+                <span class="tag">
+                  <i class="fa-solid fa-bolt"></i>
+                  Rental Management
+                </span>
+
+                <h3>
+                  Rental Application Enhancements and Workflow Improvement
+                </h3>
+              </div>
+            </div>
+
+            <div class="case-body">
+              <p>
+                Gathered and documented requirements for enhancements, defect
+                fixes, and workflow improvements across rental management
+                operations.
+              </p>
+
+              <ul class="case-list">
+                <li>Translated business needs into BRD and FRD documentation.</li>
+                <li>Maintained JIRA and Azure DevOps tracking across the lifecycle.</li>
+                <li>Supported UAT, smoke testing, and solution validation.</li>
+              </ul>
+
+              <div class="result">
+                <strong>Result:</strong>
+                Reduced quote-to-rental cycle time by 30% and helped design a
+                preventive maintenance module that reduced overdue maintenance
+                by approximately 50%.
+              </div>
+            </div>
+          </article>
+
+          <!-- Professional Project 2 -->
+          <article class="case">
+            <div class="case-top">
+              <div class="case-title">
+                <span class="tag">
+                  <i class="fa-solid fa-hands-holding-circle"></i>
+                  Non-Profit Systems
+                </span>
+
+                <h3>
+                  Volunteer, Donor &amp; Grant Management
+                </h3>
+              </div>
+            </div>
+
+            <div class="case-body">
+              <p>
+                Facilitated discovery workshops and stakeholder interviews to
+                define solutions for donor management, volunteer tracking, and
+                grant reporting.
+              </p>
+
+              <ul class="case-list">
+                <li>Created use cases, user stories, and acceptance criteria.</li>
+                <li>Built MS Visio process flows for solution sign-off.</li>
+                <li>Delivered Power BI dashboards for leadership visibility.</li>
+              </ul>
+
+              <div class="result">
+                <strong>Result:</strong>
+                Improved client onboarding time by 30% through clearer
+                documentation and training materials.
+              </div>
+            </div>
+          </article>
+
+          <!-- Professional Project 3 -->
+          <article class="case">
+            <div class="case-top">
+              <div class="case-title">
+                <span class="tag">
+                  <i class="fa-solid fa-building-columns"></i>
+                  ERP Proof of Concept
+                </span>
+
+                <h3>
+                  Great Plains to Dynamics F&amp;O Gap Analysis
+                </h3>
+              </div>
+            </div>
+
+            <div class="case-body">
+              <p>
+                Performed gap analysis and data mapping across procurement,
+                inventory, accounting, and payroll to support an ERP migration
+                proof of concept.
+              </p>
+
+              <ul class="case-list">
+                <li>Documented current-state and future-state workflows.</li>
+                <li>Centralized requirements in Azure DevOps and SharePoint.</li>
+                <li>Supported executive reviews and migration readiness analysis.</li>
+              </ul>
+
+              <div class="result">
+                <strong>Result:</strong>
+                Improved clarity around migration risks, dependencies, and
+                implementation priorities.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Educational Project -->
+    <section class="section" id="educational-project">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-graduation-cap"></i>
+              Educational Project
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              Academic analytics work connected to real business decisions.
+            </h2>
+          </div>
+
+          <p>
+            A project demonstrating data preparation, visualization, trend
+            analysis, and executive-level recommendation development.
+          </p>
+        </div>
+
+        <article class="education-project">
+          <div class="education-project-content">
+
+            <span class="tag">
+              <i class="fa-solid fa-table"></i>
+              Retail Analytics
+            </span>
+
+            <h3 style="margin-top: 12px;">
+              Retail Sales Dashboard – Accenture North America
+            </h3>
+
+            <p class="muted" style="margin-top: 10px;">
+              Built an executive-ready retail sales dashboard to analyze
+              sales performance, identify trends, and communicate actionable
+              recommendations to business stakeholders.
+            </p>
+
+            <ul class="case-list">
+              <li>Prepared and organized sales data for analysis.</li>
+              <li>Created charts and dashboard visuals for executive review.</li>
+              <li>Analyzed revenue patterns and product performance.</li>
+              <li>Translated findings into clear business recommendations.</li>
+            </ul>
+
+            <div class="result">
+              <strong>Learning outcome:</strong>
+              Demonstrated the ability to convert raw data into clear business
+              insights using structured analysis and data visualization.
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- E-Commerce Analytics Dashboard -->
+    <section class="section" id="dashboard">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-chart-pie"></i>
+              Analytics Dashboard
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              Turning e-commerce data into clearer business decisions.
+            </h2>
+          </div>
+
+          <p>
+            A full-year e-commerce performance dashboard covering revenue,
+            profit, orders, active customers, product categories, daily order
+            patterns, and customer segmentation.
+          </p>
+        </div>
+
+        
+
+        <div class="dashboard-card">
+
+          <div class="dashboard-header">
+            <div>
+              <span class="tag">
+                <i class="fa-solid fa-chart-line"></i>
+                E-Commerce Analytics Dashboard
+              </span>
+
+              <h3>Full-Year Performance Overview</h3>
+
+              <p>
+                This project demonstrates how raw e-commerce data can be
+                transformed into an executive-ready data story. The dashboard
+                combines financial KPIs, monthly trend analysis, category
+                performance, daily order behavior, and RFM customer
+                segmentation to help stakeholders move from information to
+                action. It supports product planning, inventory decisions,
+                campaign targeting, customer retention, and operational
+                performance management.
+              </p>
+            </div>
+
+            <div class="dashboard-badge">
+              Python · pandas · NumPy · Matplotlib · Seaborn
+            </div>
+          </div>
+
+          <div class="dashboard-frame">
+            <img
+              src="dashboard.png"
+              alt="E-Commerce Analytics Dashboard showing revenue, net profit, total orders, active customers, category revenue, daily order heatmap, and RFM customer segmentation"
+              class="dashboard-image"
+            />
+          </div>
+
+          <div class="insight-callout">
+            <strong>Dashboard inference:</strong>
+            The dashboard provides a consolidated view of e-commerce performance
+            by connecting revenue, profit, orders, customer activity, product
+            categories, and customer segments. It helps decision-makers
+            identify high-performing categories, monitor monthly revenue and
+            profit movement, recognize daily order patterns, and distinguish
+            valuable customer groups for targeted marketing and retention
+            strategies.
+          </div>
+
+          <div class="insight-grid">
+
+            <div class="insight-card">
+              <i class="fa-solid fa-money-bill-trend-up"></i>
+              <h4>Financial Performance</h4>
+              <p>
+                Revenue and net profit KPIs provide a quick view of overall
+                business health and year-over-year performance.
+              </p>
+            </div>
+
+            <div class="insight-card">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              <h4>Category Performance</h4>
+              <p>
+                Revenue by category highlights which product groups contribute
+                most to sales and where growth opportunities may exist.
+              </p>
+            </div>
+
+            <div class="insight-card">
+              <i class="fa-solid fa-calendar-days"></i>
+              <h4>Order Patterns</h4>
+              <p>
+                The daily orders heatmap helps identify high-activity periods
+                for staffing, inventory, and promotional planning.
+              </p>
+            </div>
+
+            <div class="insight-card">
+              <i class="fa-solid fa-users-viewfinder"></i>
+              <h4>Customer Segmentation</h4>
+              <p>
+                RFM segmentation distinguishes Champions, Loyal, At Risk, and
+                New customers for focused engagement strategies.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-timeline"></i>
+              Experience
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              A career path shaped by operations, analysis, and leadership.
+            </h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+
+          <div class="step">
+            <div class="year">2023–2025</div>
+
+            <div>
+              <h3>Sales Team Lead, Best Buy Canada</h3>
+
+              <p>
+                Led 22 associates, improved KPI reporting, gathered operational
+                requirements from managers, and drove process improvements
+                across sales, inventory, and service workflows. Achieved 125%
+                of sales targets through team leadership and performance
+                management.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="year">2020–2023</div>
+
+            <div>
+              <h3>Business Analyst, Alphavima Technologies Inc.</h3>
+
+              <p>
+                Supported rental management and non-profit solutions through
+                requirements analysis, documentation, UAT, dashboards, and
+                stakeholder collaboration.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="year">2019–2020</div>
+
+            <div>
+              <h3>Sales Associate, Best Buy Canada</h3>
+
+              <p>
+                Supported customers in a fast-paced retail environment while
+                developing practical experience in sales operations, customer
+                service, product knowledge, and business performance.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and Tools -->
+    <section class="section" id="education">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">
+              <i class="fa-solid fa-toolbox"></i>
+              Education &amp; Tools
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              Technical depth supported by business and analytical thinking.
+            </h2>
+          </div>
+        </div>
+
+        <div class="grid case-grid">
+
+          <div class="side-card">
+            <h3>Education</h3>
+
+            <div class="contact-list">
+
+              <div class="contact-item">
+                <i class="fa-solid fa-university"></i>
+
+                <div>
+                  <strong>
+                    Master of Science (MSc), Electrical &amp; Computer Engineering
+                  </strong>
+
+                  <p>
+                    Lakehead University, Thunder Bay, Ontario, Canada.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-award"></i>
+
+                <div>
+                  <strong>Academic Project</strong>
+
+                  <p>
+                    Retail Sales Dashboard – Accenture North America (Forage),
+                    November 2024.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h3>Tools &amp; Methods</h3>
+
+            <div class="chips">
+              <span class="chip">JIRA</span>
+              <span class="chip">Azure DevOps</span>
+              <span class="chip">MS Visio</span>
+              <span class="chip">SharePoint</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Excel</span>
+              <span class="chip">Python</span>
+              <span class="chip">pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
+              <span class="chip">Seaborn</span>
+              <span class="chip">Dynamics 365</span>
+              <span class="chip">Great Plains</span>
+              <span class="chip">Dynamics F&amp;O</span>
+              <span class="chip">Agile Scrum</span>
+              <span class="chip">UAT</span>
+              <span class="chip">Smoke Testing</span>
+              <span class="chip">Traceability</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="grid case-grid">
+
+          <div class="side-card">
+            <span class="eyebrow">
+              <i class="fa-solid fa-paper-plane"></i>
+              Contact
+            </span>
+
+            <h2 style="margin-top: 12px;">
+              Open to business analysis and data-focused opportunities.
+            </h2>
+
+            <p class="muted" style="margin-top: 10px;">
+              Available for roles involving requirements, process improvement,
+              reporting, CRM support, data analysis, and business systems.
+            </p>
+
+            <div class="contact-list">
+
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+
+                <div>
+                  <strong>Email</strong>
+
+                  <p>
+                    <a href="mailto:vineetkaursethi@gmail.com">
+                      vineetkaursethi@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                  <strong>Phone</strong>
+
+                  <p>
+                    <a href="tel:+14379814189">
+                      437-981-4189
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                  <strong>Location</strong>
+
+                  <p>Brampton, Ontario, Canada</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="side-card">
+            <h3>Professional Links</h3>
+
+            <div class="hero-actions">
+
+              <a
+                class="btn btn-primary"
+                href="mailto:vineetkaursethi@gmail.com"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                Email Me
+              </a>
+
+              <a
+                class="btn btn-secondary"
+                href="https://www.linkedin.com/in/vineet-kaur-65682b192"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+              </a>
+
+              <!-- Replace # with your resume file or URL -->
+              <a
+                class="btn btn-secondary"
+                href="Vineet_Kaur_Business Analyst.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download Resume
+              </a>
+
+            </div>
+
+            <p class="muted" style="margin-top: 16px;">
+              Connect with me on LinkedIn or contact me by email to discuss
+              business analysis, data analytics, and process improvement
+              opportunities.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Vineet Kaur. Business Analysis, Data Analytics, and Process Transformation.
+    </div>
+  </footer>
+
+</body>
+</html>
